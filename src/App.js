@@ -32,6 +32,7 @@ class App extends React.Component{
 	render(){
 		return (
 			<Switch>
+				<Route />
 				<Route path="/comments" render={(props) => <CommentBox {...props} currentUser={this.state.currentUser}/>}/>
 				<Route path="/login" render={(props) => <LoginForm {...props} login={this.login}/>}/>
 				<Route path="/signup" render={(props) => <SignupForm {...props} login={this.login}/>}/>
